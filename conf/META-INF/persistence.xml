@@ -1,0 +1,53 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+
+    <persistence-unit name="defaultPersistenceUnit" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <non-jta-data-source>CYP_MIS_DS</non-jta-data-source>
+        <class>models.Program.PrOpEntity</class>
+        <class>models.coreData.CoreEidikoiStoxoiEntity</class>
+        <class>models.Program.PrTable10Entity</class>
+        <class>models.Program.PrSoDeiktesEntity</class>
+        <class>models.coreData.TempTableEntity</class>
+        <class>models.coreData.CoreEligibleExpensesEntity</class>
+        <class>models.coreData.CoreAttachmentsEntity</class>
+        <class>models.coreData.CoreActionsCategoriesEntity</class>
+        <class>models.coreData.PrActionsCategoriesEntity</class>
+        <class>models.Program.PrActionsCategoriesEntity</class>
+        <class>models.coreData.CoreEvaluationTemplateEntity</class>
+        <class>models.coreData.CoreEvalTemplateDetailsEntity</class>
+        <class>models.coreData.CoreOrganisationsEntity</class>
+        <class>models.cfp.CfpInvitationEntity</class>
+        <class>models.coreData.CorePersonsEntity</class>
+        <class>models.cfp.CfpInvBenefEligPrjsEntity</class>
+        <class>models.cfp.PrActionsCategoriesEntity</class>
+        <class>models.security.BussinessObjectsOrganizationEntity</class>
+        <class>models.cfp.CfpInvitationIndexesEntity</class>
+        <class>models.cfp.CfpInvSpecialTermsEntity</class>
+        <class>models.cfp.CfpInvAdditionalDocumentsEntity</class>
+        <class>models.cfp.CfpInvFaeEntity</class>
+        <class>models.cfp.CfpInvFaeCriteriaEntity</class>
+        <class>models.cfp.CfpInvAttachmentsEntity</class>
+        <class>models.cfp.CfpInvAttachmentsDocsEntity</class>
+        <class>models.Program.PrOpEligExpEntity</class>
+        <class>models.cfp.CfpInvValidationErrorsEntity</class>
+        <class>models.cfp.CfpInvitationCheckingEntity</class>
+        <class>models.cfp.CfpInvDsCheckingCommentsEntity</class>
+        <class>models.cfp.CfpInvDsCommentsEntity</class>
+        <class>models.security.StatusCommentsEntity</class>
+        <class>models.cfp.projects.PrjProjectEntity</class>
+        <class>models.cfp.projects.PrjTdeEntity</class>
+        <class>models.cfp.projects.PrjTdeAttachmentsEntity</class>
+        <class>models.cfp.projects.PrjTdeAttachmentsDocsEntity</class>
+        <properties>
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+            <property name="hibernate.connection.url" value="jdbc:oracle:thin:@144.91.80.190:1521:ora12c"/>
+            <property name="driverClassName" value="oracle.jdbc.OracleDriver" />
+            <property name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>
